@@ -3,7 +3,7 @@
     padding: 0;
     font-family: 'Kanit', sans-serif;
 }
-
+/* Button for scrolling back to top*/
 #myBtn {
     display: none;
     position: fixed;
@@ -13,7 +13,7 @@
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: rgb(200, 148, 75);
+    background-color: rgb(0, 137, 9);
     color: white;
     cursor: pointer;
     padding: 20px;
@@ -21,9 +21,6 @@
     border-radius: 5%;
   }
   
-  #myBtn:hover {
-    background-color: rgb(0, 137, 9);
-  }
   .arrow {
     border: solid black;
     border-width: 0 3px 3px 0;
@@ -34,7 +31,7 @@
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
   }
-
+/* index.html CSS*/
 /* header css */
 
 .header{
@@ -113,7 +110,7 @@
     transition: 1.5s;
 }
 
-/* course css */
+/* course section css */
 
 .course{
     width: 80%;
@@ -252,3 +249,260 @@
     color:white;
     transition: 1.5s;
 }
+/* contact.html section CSS*/
+.contact-header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 0, 112, 0.7),rgba(3, 13, 53, 0.7)), url("images/banner-four.jpg");
+    background-position: center;
+    background-size: cover;
+    position:relative;
+}
+.contact{
+    width: 50%;
+    color: #ffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 1%;
+    border: 1px solid white;
+}
+input[type=text],[type=email], textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+ #contact-p{
+     font-size: 36px;
+ }
+ .contact-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 21px;
+    background: transparent;
+    position: relative;
+}
+.contact-btn:hover{
+    border: 1px solid red;
+    background-color: red;
+    color:white;
+    transition: 1.5s;
+}
+ /* about.html section CSS*/
+ .about-info{
+    width: 90%;
+    color: #ffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+ }
+ @keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+ .about-info p{
+    font-size: 60px;
+    font-weight: 600;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideInLeft;
+ }
+ .about-header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 0, 112, 0.7),rgba(3, 13, 53, 0.7)), url("images/banner-three.jpg");
+    background-position: center;
+    background-size: cover;
+    position:relative;
+}
+.about-answer img{
+    width: 50%;
+    height: 50%;
+    padding: 2%;
+    object-fit: cover;
+    border-radius: 25%;
+    
+}
+.about-answer{
+    padding: 2%;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: row;
+    font-family: sans-serif;
+}
+.paragraph {
+    color: #555;
+    display: flex;
+    flex-direction: column;
+}
+.content {
+    padding: 10%;
+    text-align: center;
+}
+.title {
+    font-size: 24px;
+    color: #222;
+    line-height: 24px;
+}
+.image-one{
+    padding: 10%;
+    text-align: center;
+}
+.about-footer{
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    font-family: sans-serif;
+    background-color: rgb(193,154,107);
+}
+.about-end{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.about-end h1{
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+/* Blog section css */
+@keyframes slideInRight {
+    0% {
+      transform: translateX(+100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+.blog-header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 0, 112, 0.7),rgba(3, 13, 53, 0.7)), url("images/student-four.jpg");
+    background-position: center;
+    background-size: cover;
+    position:relative;
+    margin-bottom: 4%;
+ }
+ .blog-info{
+    width: 90%;
+    color: #ffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+ }
+ .blog-info p{
+    font-size: 60px;
+    font-weight: 600;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideInRight;
+ }
+
+ /* blog section css */
+
+.blog-cards{
+    
+    width: 70%;
+    margin: auto;
+    padding: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    background-color: rgba(193,154,107,0.4);
+    display: flex;
+    border-radius: 10%;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+                rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+                rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+                rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+                rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.blog-post{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    background: rgb(233, 233, 233);
+    border-radius: 2%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+                rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+                rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+                rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+                rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.blog-post img{
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    justify-content: center;
+    border-radius: 2%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+                rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+                rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+                rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+                rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.blog-post-info{
+    
+    align-items: center;
+    justify-content: center;
+    padding: 8%;
+}
+.blog-post-date{
+    padding: 5%;
+}
+.blog-post-cta{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    background-color: #8b4513;
+    text-transform: uppercase;
+}
+.blog-post-cta:hover{
+    background-color: #04AA6D;
+    color: black;
+}
+
